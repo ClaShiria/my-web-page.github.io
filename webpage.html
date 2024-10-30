@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <!--Head-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>World of animals</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet/webpage.css">
+    </head>
+
+    <!--Body-->
+    <body class="Background">
+
+        <!--Navbar-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">O mnie</a>
+            <a href="#Gallery">Galeria</a>
+            <a href="#Prices">Ceny</a>
+            <a href="#Contact">Kontakt</a>
+        </div>
+
+        <br>
+        <br>
+
+        <!--Background video-->
+        <div id="Home">
+            <video autoplay muted loop id="Typing_Video">
+                <source src="images/video/fish.mp4" type="video/mp4">
+                <!--Display message if video fails to run-->
+                Your browser does not support this video.
+            </video>
+        </div>
+
+        <!--Video text-->
+        <div class="Video_Text">
+            <h1 class="white-text">Vivary world</h1>
+            <strong>
+                <p class="center">
+                    <q>
+                        Serce człowieka można poznać po tym, jak traktuje zwierzęta.
+                    </q>
+                    <br> -— Immanuel Kant"
+
+                </p>
+            </strong>
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="About">
+            <!--Left column-->
+            <div class="Column_2">
+                <img src="images/photo1.jpg" alt="photo1">
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>O mnie</h1>
+                <p>
+                    Jestem pełnym pomysłów twórcą viwariów i akwariów.
+                    <br>
+                    <br>Moje dzieła są wyjątkowe a przede wszystkim bezpieczne i spersonalizowane zarównio jak i dla właściciela ale przede wszystkim dla zwierzaka.
+                    <br>
+                    <br>Nie ma dla mnie projektu nie do wykonania.
+
+                    <br> Przekonaj się sam. <a href="#Contact">Skontaktuj</a> się ze mną!
+                </p>
+            </div>
+        </div>
+
+        <!--Gallery section-->
+        <div class="Row" id="Gallery">
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>Galeria</h1>
+                <p>
+                    Tutaj możesz zobaczyć kilka z moich prac.
+                    <br>
+                    <br>Każda z nich została wykonana na indywiduane zamówienie. 
+                    <br>
+                </p>
+            </div>
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png" alt="Geleria"></a>
+            </div>
+        </div>
+
+
+        <!--Prices section-->
+        <div class="Row" id="Prices">
+            <!--Left column-->
+            <!--Right column-->
+            <div class="Column_2">
+                <a href="https://github.com/the-tech-academy" target="_blank"><img src="images/GitHub.png" alt="Geleria"></a>
+            </div>
+            <!--Right column-->
+            <div class="Column_1">
+                <h1>Ceny</h1>
+                <p>
+                    Każde viwarium i akwarium ma swoją unikatową cenę.
+                    <br>
+                    <br>Jest to zależe od użytych materiałów i wymagań co do wystroju wewnątrz.
+                    <br>
+                    <br><a href="#Contact">Skontaktuj</a> się ze mną aby uzyskać wycenę!
+                </p>
+            </div>
+        </div>
+
+        <!--Contact section-->
+        <div class="Row" id="Contact">
+            <!--Contact image, left column-->
+            <div class="Column_1 Column_tall">
+                <h1>Kontakt</h1>
+                <!--This specifies where and how to send the form data; we are leaving it blank-->
+                <form action="" method="POST">
+                    <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
+                    <label>Imie i Nazwisko:</label>
+                    <input type="text" placeholder="Podaj Twoje imię i nazwisko">
+                    <label>Email:</label>
+                    <input type="text" id="Email" name="Email" placeholder="Podaj twój adres email">
+                    <label>Treść:</label>
+                    <input type="text" id="Message" name="Message" placeholder="Treść wiadomości">
+                    <input type="submit" value="WYŚLIJ">
+                </form>
+            </div>
+            <!--Contact form, right column-->
+            
+            <div class="Column_2 Column_tall">
+                <img src="flower.jpg" alt="Contact_Image">
+            </div>
+        </div>
+
+        <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="plant1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="plant2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="plant3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="plant4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="plant1-small.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="plant2-small.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="plant3-small.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="plant4-small.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="plant1.jpg" onclick="currentSlide(1)" alt="Flower1">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="plant2.jpg" onclick="currentSlide(2)" alt="Flower2">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="plant3.jpg" onclick="currentSlide(3)" alt="Flower3">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="plant4.jpg" onclick="currentSlide(4)" alt="Flower4">
+      </div>
+    </div>
+  </div>
+
+
+        <!--Footer section-->
+        <footer>
+            <p>
+            <p class="center">&copy Prosper Consulting Inc.2024, </p>
+            <br>
+            </p>
+        </footer>
+    </body>
+
+    <script src="JavaScript.js"></script>
+</html>
